@@ -7,10 +7,79 @@
     <title>Bike Activity Tracker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bike Activity Tracker</a>
+    </nav>
+    <main class="container mt-5">
+        <!-- activity form -->
+        <section id="activity-form" class="mb-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Track a Bike Ride
+                            </button>
+                        </h2>
+                    </div>
 
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="milage">Milage</label>
+                                    <input type="number" class="form-control" id="milage" aria-describedby="milageHelp">
+                                    <small id="milageHelp" class="form-text text-muted">Enter your length of your ride
+                                        in miles, including up to 1 decimal point</small>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="duration">Milage</label>
+                                    <input type="number" class="form-control" id="duration"
+                                        aria-describedby="durationHelp">
+                                    <small id="durationHelp" class="form-text text-muted">Enter your length of your
+                                        ride
+                                        in minutes. Use the closest whole number.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="date">Milage</label>
+                                    <input type="date" class="form-control" id="date" aria-describedby="dateHelp">
+                                    <small id="dateHelp" class="form-text text-muted">Pick a date</small>
+                                </div>
+
+
+
+                                <button type="submit" class="btn btn-primary">Track Ride</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- graph for milage-->
+        <section id="milage-graph">
+            <div class="jumbotron mb-5">
+                <div id="milage-highchart"></div>
+            </div>
+        </section>
+
+        <!-- graph for duration -->
+        <section id="duration-graph">
+            <div class="jumbotron mb-5">
+                <div id="duration-highchart"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -20,6 +89,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script>
+
+
+    </script>
 </body>
 
 </html>
