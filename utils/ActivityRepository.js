@@ -12,4 +12,4 @@ class ActivityRepository {
     }
 }
 
-module.exports = ActivityRepository; 
+module.exports = ActivityRepository;
